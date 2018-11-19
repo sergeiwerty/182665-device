@@ -10,22 +10,22 @@
 			<img src="device.svg" alt="Device logo">
 			<h1 class="visually_hidden">Интернет-магазин гаджетов "Device"</h1>
 			<ul class="user_interface_list">
-				<li class="user_interface_item">Войти</li>
+				<li class="user_interface_item"><a href="sign-in.html">Войти</a></li>
 			</ul>
 			<ul class="purchase_list">
-				<li class="purchase_item">Сравнить</li>
-				<li class="purchase_item">Корзина</li>
+				<li class="purchase_item"><a href="comparison.html">Сравнить</a></li>
+				<li class="purchase_item"><a href="basket.html">Корзина</a></li>
 			</ul>
 			<nav class="main_navigation">
 				<ul class="navigation_list">
 					<li class="navigation_menu">Каталог товаров
 						<ul class="catalog_list">
 							<li class="catalog_item"><a href="virtual.html">Виртуальная реальность</a></li>
-							<li class="catalog_item"><a href="monopods.html">Моноподы для селфи</a></li>
-							<li class="catalog_item"><a href="action-cameras.html">Экшн-камеры</a></li>
 							<li class="catalog_item"><a href="bracelets.html">Фитнес-браслеты</a></li>
-							<li class="catalog_item"><a href="smart-watch.html">Умные часы</a></li>
 							<li class="catalog_item"><a href="quadcopters.html">Квадрокоптеры</a></li>
+							<li class="catalog_item"><a href="monopods.html">Моноподы для селфи</a></li>
+							<li class="catalog_item"><a href="smart-watch.html">Умные часы</a></li>
+							<li class="catalog_item"><a href="action-cameras.html">Экшн-камеры</a></li>
 						</ul>
 					</li>
 					<li class="navigation_item"><a href="#delivery">Доставка</a></li>
@@ -36,15 +36,15 @@
 		</header>
 
 		<main>
-			<div class="devices_slider">
+			<div class="devices-slider_1">
 				<img src="selfie-stick.jpg" alt="selfie-stick">
 				<b>Делай селфи, как Бен Стиллер!</b>
 				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 				<a href="selfie-stick.html">Подробнее</a>
 				<ul class="slider_buttons">
-					<li class="slider_page"><button></button></li>
-					<li class="slider_page"><button></button></li>
-					<li class="slider_page"><button></button></li>
+					<li class="slider_page"><button type="button"></button></li>
+					<li class="slider_page"><button type="button"></button></li>
+					<li class="slider_page"><button type="button"></button></li>
 				</ul>
 				<table>
 					<tr>
@@ -56,6 +56,40 @@
 						<td>8,5 м</td>
 						<td>5 кг</td>
 						<td>Карбон</td>
+					</tr>
+				</table>
+			</div>
+			<div class="devices-slider_2">
+				<img src="smart-watch.jpg" alt="smart-watch">
+				<b>Худеем правильно!</b>
+				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+				<a href="smart-watch.html">Подробнее</a>
+				<ul class="slider_buttons">
+					<li class="slider_page"><button type="button"></button></li>
+					<li class="slider_page"><button type="button"></button></li>
+					<li class="slider_page"><button type="button"></button></li>
+				</ul>
+				<p>48 часов</p>
+				<p>Без подзарядки</p>
+			</div>
+			<div class="devices-slider_3">
+				<img src="quadcopter.jpg" alt="smart-watch">
+				<b>Порхает как бабочка, жалит как пчела!</b>
+				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+				<a href="quadcopter.html">Подробнее</a>
+				<ul class="slider_buttons">
+					<li class="slider_page"><button type="button"></button></li>
+					<li class="slider_page"><button type="button"></button></li>
+					<li class="slider_page"><button type="button"></button></li>
+				</ul>
+				<table>
+					<tr>
+						<th>Дальность полёта</th>
+						<th>Радиус поражения</th>
+					</tr>
+					<tr>
+						<td>800 м</td>
+						<td>50 м</td>
 					</tr>
 				</table>
 			</div>
@@ -93,29 +127,29 @@
 			<section class="partners">
 				<h2 class="visually_hidden">Производители наших товаров</h2>
 				<ul class="partners_list">
-					<li><img src="dji.jpg" alt="DJI"></li>
-					<li><img src="sp_gadjets.jpg" alt="Sp Gadjets"></li>
-					<li><img src="go_pro.jpg" alt="Go Pro"></li>
-					<li><img src="vive.jpg" alt="Vive"></li>
+					<li><a href="catalog/dji.html"><img src="dji.jpg" alt="DJI"></a></li>
+					<li><a href="catalog/sp_gadjets.html"><img src="sp_gadjets.jpg" alt="Sp Gadjets"></a></li>
+					<li><a href="catalog/go_pro.html"><img src="go_pro.jpg" alt="Go Pro"></a></li>
+					<li><a href="catalog/vive.html"><img src="vive.jpg" alt="Vive"></a></li>
 				</ul>
 			</section>
 			<div class="information">
-				<section class="about_us">
+				<section class="about-us">
 					<h3>О нас</h3>
 					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 					<p>Мы можем доставить ваш товар в самые отдалённые точки России! DEVICE работает со многими транспортными компаниями:</p>
 					<ul class="transport-companies_list">
-						<li><span></span>Деловые линии</li>
-						<li><span></span>Автотрейдинг</li>
-						<li><span></span>ЖелДорЭкспедиция</li>
+						<li>Деловые линии</li>
+						<li>Автотрейдинг</li>
+						<li>ЖелДорЭкспедиция</li>
 					</ul>
-					<button type="button">ПОДРОБНЕЕ О НАС</button>
+					<a href="about-us.html">ПОДРОБНЕЕ О НАС</a>
 				</section>
 				<section class="contacts">
 					<h3 id="contacts">Контакты</h3>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<img src="map.jpg" alt="офис DEVICE по адресу улица Строителей, 15">
-					<button type="button">НАПИШИТЕ НАМ</button>
+					<a href="write-us.html">НАПИШИТЕ НАМ</a>
 				</section>
 			</div>
 		</main>
@@ -133,34 +167,26 @@
 				</ul>
 				<ul class="socials_list">
 					<li class="socials_buttom">
-						<form action="facebook.com">
-							<button type="submit">facebook.com</button>
-						</form>
+						<a href="https://www.facebook.com/device-shop"></a>
 					</li>
 					<li class="socials_buttom">
-						<form action="instagram.com">
-							<button type="submit">instagram.com</button>
-						</form>
+						<a href="https://www.instagram.com/device-shop"></a>
 					</li>
 					<li class="socials_buttom">
-						<form action="twitter.com">
-							<button type="submit">twitter.com</button>
-						</form>
+						<a href="https://www.twitter.com/device-shop"></a>
 					</li>
 				</ul>
 			</div>
 			<div>
 				<ul class="user-interface_list_footer">
-					<li class="user-interface_item_footer">Войти</li>
+					<li class="user-interface_item_footer"><a href="sign-in.html">Войти</a></li>
 				</ul>
 				<ul class="purchase_list_footer">
-					<li class="purchase_item_footer">Сравнить</li>
-					<li class="purchase_item_footer">Корзина</li>
+					<li class="purchase_item_footer"><a href="comparison.html">Сравнить</a></li>
+					<li class="purchase_item_footer"><a href="basket.html">Корзина</a></li>
 				</ul>
 				<p>Тел.: +7(495)495-95-95</p>
-				<form action="htmlacademy.ru">
-					<button type="submit">htmlacademy.ru</button>
-				</form>
+				<a href="https://htmlacademy.ru/intensive/htmlcss"></a>
 			</div>
 		</footer>
 	</body>
