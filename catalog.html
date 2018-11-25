@@ -21,7 +21,7 @@
 			</ul>
 			<nav class="main_navigation">
 				<ul class="navigation_list">
-					<li class="navigation_menu">Каталог товаров
+					<li class="navigation_menu"><a href="#">Каталог товаров</a>
 						<ul class="catalog_list">
 							<li class="catalog_item"><a href="virtual.html">Виртуальная реальность</a></li>
 							<li class="catalog_item"><a href="monopods.html">Моноподы для селфи</a></li>
@@ -47,7 +47,47 @@
 			</ul>
 			<section class="filters">
 				<h2>ФИЛЬТР:</h2>
-				<!-- Фильтры размечу чуть позже -->
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<fieldset class="filter_color">
+						<legend>Цвет</legend>
+						<ul class="filter_color_list">
+							<li class="color_parameter">
+								<input type="checkbox" name="black" id="filter_black" checked>
+								<label for="filter_black">Чёрный</label>
+							</li>
+							<li class="color_parameter">
+								<input type="checkbox" name="white" id="filter_white" >
+								<label for="filter_white">Белый</label>
+							</li>
+							<li class="color_parameter">
+								<input type="checkbox" name="blue" id="filter_blue" checked>
+								<label for="filter_blue">Синий</label>
+							</li>
+							<li class="color_parameter">
+								<input type="checkbox" name="red" id="filter_red" checked>
+								<label for="filter_red">Красный</label>
+							</li>
+							<li class="color_parameter">
+								<input type="checkbox" name="pink" id="filter_pink">
+								<label for="filter_pink">Розовый</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="filter_bluetooth">
+						<legend>Bluetooth</legend>
+						<ul>
+							<li>
+								<input type="radio" name="bluetooth availability" id="availability_yes" checked>
+								<label for="availability_yes">Есть</label>
+							</li>
+							<li>
+								<input type="radio" name="bluetooth availability" id="availability_no">
+								<label for="availability_no">Нет</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button type="submit" class="filter_button">ПОКАЗАТЬ</button>
+				</form>
 			</section>
 			<section class="sorting">
 				<h2>СОРТИРОВКА:</h2>
