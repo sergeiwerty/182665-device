@@ -98,9 +98,21 @@
 					</table>
 				</div>
 				<ul class="slider_buttons">
-					<li class="slider_page"><button type="button"></button></li>
-					<li class="slider_page"><button type="button"></button></li>
-					<li class="slider_page"><button type="button"></button></li>
+					<li class="slider_page">
+						<button type="button">
+							<span class="visually_hidden">переключиться на первый слайд</span>
+						</button>
+					</li>
+					<li class="slider_page">
+						<button type="button">
+							<span class="visually_hidden">переключиться на  второй слайд</span>
+						</button>
+					</li>
+					<li class="slider_page">
+						<button type="button">
+							<span class="visually_hidden">переключиться на третий слайд</span>
+						</button>
+					</li>
 				</ul>
 			</div>
 			<section class="product_categories">
@@ -207,13 +219,18 @@
 				</ul>
 				<ul class="socials_list">
 					<li class="socials_buttom">
-						<a href="https://www.facebook.com/device-shop"></a>
+						<a href="https://www.facebook.com/device-shop">
+							<span class="visually_hidden">мы на фейсбуке</span>
+						</a>
 					</li>
 					<li class="socials_buttom">
-						<a href="https://www.instagram.com/device-shop"></a>
+						<a href="https://www.instagram.com/device-shop">
+							<span class="visually_hidden">мы в инстаграмме
 					</li>
 					<li class="socials_buttom">
-						<a href="https://www.twitter.com/device-shop"></a>
+						<a href="https://www.twitter.com/device-shop">
+							<span class="visually_hidden">мы в твиттере</span>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -229,5 +246,22 @@
 				<a href="https://htmlacademy.ru/intensive/htmlcss"></a>
 			</div>
 		</footer>
+
+		<div class="pop-up_form">
+			<button type="button" value="закрыть"></button>
+			<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+				<label for="write-us">Ваше имя:</label>
+				<input type="text" name="write-us" id="write-us" placeholder="Имя Фамилия">
+				<label for="your-email">Ваше e-mail:</label>
+				<input type="email" name="your-email" id="your-email" placeholder="email@example.com">
+				<label for="text-of-message">Текст письма:</label>
+				<textarea name="input-message" id="text-of-message" rows="5">В свободной форме</textarea>
+			</form>
+		</div>
+
+		<div class="pop-up_map">
+			<button type="button" value="закрыть"></button>
+			<img src="img/map_pop-up.jpg" width="960" alt="г. Москва, ул. Строителей, 15">
+		</div>
 	</body>
 </html>
