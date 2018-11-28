@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Интернет-магазин гаджетов "Device"</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header>
@@ -160,17 +160,17 @@
 				<h2 class="visually_hidden">Наши услуги</h2>
 				<ul class="services_list">
 					<li class="services_item">
-						<a href="delivery.html"><img src="img/delivery.svg">Доставка</a>
+						<a href="delivery.html"><img src="img/delivery.svg" alt="доставка">Доставка</a>
 						<h3 id="delivery" class="services_item_heading">Доставка</h3>
 						<p class="services_item_info">Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					</li>
 					<li class="services_item">
-						<a href="warranty.html"><img src="img/warranty.svg">Гарантия</a>
+						<a href="warranty.html"><img src="img/warranty.svg" alt="гарантия">Гарантия</a>
 						<h3 id="warranty" class="services_item_heading">Гарантия</h3>
 						<p class="services_item_info">Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте мы дадим вам новый. Товар, не дом, конечно же.</p>
 					</li>
 					<li class="services_item">
-						<a href="warranty.html"><img src="img/credit.svg">Кредит</a>
+						<a href="warranty.html"><img src="img/credit.svg" alt="кредит">Кредит</a>
 						<h3 class="services_item_heading">Кредит</h3>
 						<p class="services_item_info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 					</li>
@@ -179,10 +179,26 @@
 			<section class="partners">
 				<h2 class="visually_hidden">Производители наших товаров</h2>
 				<ul class="partners_list">
-					<li><a href="catalog/dji.html"><img src="img/dji.png" width="260" alt="DJI"></a></li>
-					<li><a href="catalog/sp_gadjets.html"><img src="img/sp-gadjets.png" width="260" alt="Sp Gadjets"></a></li>
-					<li><a href="catalog/go_pro.html"><img src="img/go-pro.png" width="260" alt="Go Pro"></a></li>
-					<li><a href="catalog/vive.html"><img src="img/vive.png" width="260" alt="Vive"></a></li>
+					<li>
+						<a href="catalog/dji.html">
+							<img src="img/dji.png" width="260" alt="DJI">
+						</a>
+					</li>
+					<li>
+						<a href="catalog/sp_gadjets.html">
+							<img src="img/sp-gadjets.png" width="260" alt="Sp Gadjets">
+						</a>
+					</li>
+					<li>
+						<a href="catalog/go_pro.html">
+							<img src="img/go-pro.png" width="260" alt="Go Pro">
+						</a>
+					</li>
+					<li>
+						<a href="catalog/vive.html">
+							<img src="img/vive.png" width="260" alt="Vive">
+						</a>
+					</li>
 				</ul>
 			</section>
 			<div class="information">
@@ -225,7 +241,8 @@
 					</li>
 					<li class="socials_buttom">
 						<a href="https://www.instagram.com/device-shop">
-							<span class="visually_hidden">мы в инстаграмме
+							<span class="visually_hidden">мы в инстаграмме</span>
+						</a>
 					</li>
 					<li class="socials_buttom">
 						<a href="https://www.twitter.com/device-shop">
@@ -248,7 +265,9 @@
 		</footer>
 
 		<div class="pop-up_form">
-			<button type="button" value="закрыть"></button>
+			<button type="button">
+				<span class="visually_hidden">кнопка закрытия окна</span>
+			</button>
 			<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
 				<label for="write-us">Ваше имя:</label>
 				<input type="text" name="write-us" id="write-us" placeholder="Имя Фамилия">
@@ -256,11 +275,16 @@
 				<input type="email" name="your-email" id="your-email" placeholder="email@example.com">
 				<label for="text-of-message">Текст письма:</label>
 				<textarea name="input-message" id="text-of-message" rows="5">В свободной форме</textarea>
+				<label class="visually_hidden">Отправить данные формы
+					<input type="submit" name="write-us_submit" value="ОТПРАВИТЬ">
+				</label>
 			</form>
 		</div>
 
 		<div class="pop-up_map">
-			<button type="button" value="закрыть"></button>
+			<button type="button" >
+				<span class="visually_hidden">кнопка закрытия окна</span>
+			</button>
 			<img src="img/map_pop-up.jpg" width="960" alt="г. Москва, ул. Строителей, 15">
 		</div>
 	</body>
