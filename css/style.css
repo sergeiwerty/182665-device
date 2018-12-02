@@ -9,12 +9,430 @@
 
 body {
 	margin: 0;
-  padding: 0;
-  font-size: 100%;
-  font-family: "Gilroy";
+	padding: 0;
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: normal;
+	text-decoration: none;
 }
 
-h1 .visually-hidden {
+.main-header img:hover {
+	opacity: 0.6;
+}
+
+.main-header img:active {
+	opacity: 0.3;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-header {
+	background-color: #f7e296;
+}
+
+.interface-anchor {
 	font-size: 100%;
-  font-family: gilroy-light;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 20px;
+	font-style: normal;
+	color: #000000;
+}
+
+.interface-anchor:hover {
+	opacity: 0.6;
+}
+
+.interface-anchor:active {
+	opacity: 0.3;
+}
+
+.navigation_item>a,
+.devices-slider a {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	font-style: normal;
+	color: #000000;
+}
+
+.devices-slider a {
+	background-color: #f0c52e;
+}
+
+.navigation_item>a:hover {
+	opacity: 0.6;
+}
+
+.devices-slider a:hover {
+	background-color: #f0c52e;
+}
+
+.navigation_item>a:active {
+	opacity: 0.3;
+	background-color: #f0c52e;
+}
+
+.devices-slider a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog_list_item a {
+	color: #000000;
+	line-height: 36px;
+}
+
+.catalog_list_item a:hover {
+	opacity: 0.6;
+}
+
+.catalog_list_item a:active {
+	opacity: 0.3;
+}
+
+.categories_item {
+	display: inline-block;
+}
+
+.categories_item a {
+	display: inline-block;
+	background-color: #f7e296;
+}
+
+.categories_item:hover {
+	background-color: #f0c52e;
+}
+
+.categories_item a:active img {
+	opacity:0.3;
+}
+
+.services {
+	background-color: #e5e5e5;
+}
+
+.devices-slider b {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 56px;
+	font-style: normal;
+	color: #000000;
+}
+
+.advertising-info {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	font-style: normal;
+	color: #464646;
+}
+
+.slider_1_info th,
+.slider_2_info p:nth-child(2),
+.slider_3_info th {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 20px;
+	font-style: normal;
+	color: #464646;
+}
+
+.slider_1_info td,
+.slider_2_info p:nth-child(1),
+.slider_3_info td {
+font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 48px;
+	font-style: normal;
+	color: #000000;
+}
+
+.categories_item_heading {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	font-style: normal;
+	color: #000000;
+}
+
+a[href="delivery.html"],
+a[href="warranty.html"],
+a[href="credit.html"] {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	font-style: normal;
+	color: #000000;
+}
+
+.services_item_heading {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 48px;
+	font-style: normal;
+	color: #000000;
+}
+
+.services_item_info {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	font-style: normal;
+	color: #464646;
+}
+
+.about-us h3,
+.contacts h3 {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 48px;
+	font-style: normal;
+	color: #000000;
+}
+
+.about-us p,
+.contacts p {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	font-style: normal;
+	color: #464646;
+}
+
+.transport-companies_item {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 40px;
+	font-style: normal;
+	color: #000000;
+}
+
+.about-us a,
+.contacts a { 
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	font-style: normal;
+	color: #000000;
+}
+
+.index-footer,
+.catalog-footer {
+	background-color: #464646;
+}
+
+.footer-left p {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	font-style: normal;
+	color: #ffffff;
+}
+
+.footer-navigation_item a {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	font-style: normal;
+	color: #ffffff;
+	letter-spacing: 0.2em;
+}
+
+.user-interface_list_footer a,
+.purchase_list_footer a {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	font-style: normal;
+	letter-spacing: 0.01em;
+	color: #ffffff;
+}
+
+.footer-right p {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	font-style: normal;
+	color: #ffffff;
+}
+
+label {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	font-style: normal;
+	color: #000000;
+}
+
+.visually-hidden input[value="ОТПРАВИТЬ"] {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	font-style: normal;
+	color: #000000;
+}
+
+.write-us textarea,
+input[type="text"],
+input[type="email"] {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	font-style: normal;
+	color: #464646;
+}
+
+a[href="sign-out.html"] {
+	line-height: 30px;
+	color: #000000;
+}
+
+.container-catalog h2 {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: 48px;
+	font-style: normal;
+	color: #000000;
+}
+
+.breadcrumbs a, 
+.breadcrumbs li {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	font-style: normal;
+	letter-spacing: 0.01em;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.filters p,
+.sorting h2 {
+	display: inline-block;
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 24px;
+	font-style: normal;
+	letter-spacing: 0.2em;
+	color: #000000;
+	background-color: #dbdbdb;
+}
+
+.sorting h2 {
+	background-color: #ebebeb;
+}
+
+.filters form {
+background-color: #eeeeee;
+}
+
+.filter_color legend,
+.filter_bluetooth legend {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	font-style: normal;
+	letter-spacing: 0.01em;
+	color: #000000;
+}
+
+.color_parameter label,
+.bluetooth-availability label {
+	font-size: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 40px;
+	font-style: normal;
+	letter-spacing: 0.01em;
+	color: #000000;
+}
+
+.filter_button {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	font-style: normal;
+	letter-spacing: 0.2em;
+	color: #000000;
+}
+
+.enumeration_list_item a {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 24px;
+	font-style: normal;
+	letter-spacing: 0.01em;
+	color: #000000;
+}
+
+.enumeration_list_item span {
+	font-size: 100%;
+	font-family: "Gilroy", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	font-style: normal;
+	letter-spacing: 0.01em;
+	color: #464646;
 }
