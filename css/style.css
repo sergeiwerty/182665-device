@@ -26,6 +26,37 @@ body {
 	opacity: 0.3;
 }
 
+.search-input {
+	line-height: 30px;
+	letter-spacing: 0.01em;
+	color: rgba(0, 0, 0, 0.3);
+	background-color: #f7e296;
+}
+
+.search-input:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.search-input:focus {
+	color: #000000;
+}
+
+.search-button {
+	line-height: 30px;
+	letter-spacing: 0.01em;
+	color: rgb(0, 0, 0,);
+	background-color: #f7e296;
+}
+
+.search-button:hover {
+	color: rgb(255, 255, 255);
+	background-color: #000000;
+}
+
+.search-button:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
 li {
 	list-style: none;
 }
@@ -259,6 +290,26 @@ a[href="credit.html"] {
 	background-color: #464646;
 }
 
+.socials_button img {
+	opacity: 0.3;
+}
+
+.socials_button img:hover {
+	opacity: 0.6;
+}
+
+.socials_button img:active {
+	opacity: 0.1;
+}
+
+.footer-left img:hover {
+	opacity: 0.6;
+}
+
+.footer-left img:active {
+	opacity: 0.3;
+}
+
 .footer-left p {
 	font-size: 100%;
 	font-family: "Open Sans", sans-serif;
@@ -280,6 +331,14 @@ a[href="credit.html"] {
 	letter-spacing: 0.2em;
 }
 
+.footer-navigation_item a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-navigation_item a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .user-interface_list_footer a,
 .purchase_list_footer a {
 	font-size: 100%;
@@ -289,7 +348,17 @@ a[href="credit.html"] {
 	line-height: 30px;
 	font-style: normal;
 	letter-spacing: 0.01em;
-	color: #ffffff;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.user-interface_list_footer a:hover,
+.purchase_list_footer a:hover {
+	color: rgb(255, 255, 255);
+}
+
+.user-interface_list_footer a:active,
+.purchase_list_footer a:active {
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-right p {
