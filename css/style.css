@@ -109,9 +109,11 @@ a {
 .categories_item a {
 	display: inline-block;
 	background-color: #f7e296;
+	width: 160px;
+	height: 160px;
 }
 
-.categories_item:hover {
+.categories_item:hover a {
 	background-color: #f0c52e;
 }
 
