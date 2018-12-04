@@ -17,17 +17,23 @@
 					<input class="search-input" type="search" name="device-search" placeholder="Поиск по сайту">
 					<input class="search-button" type="submit" name="search-request" value="Найти">
 				</form>
-				<ul class="index-interface_list">
-						<li class="index-interface_item"><a class="interface-anchor" href="sign-in.html">Войти</a></li>
-				</ul>
-				<ul class="purchase-list">
-					<li class="purchase-item"><a class="interface-anchor" href="comparison.html">Сравнить</a></li>
-					<li class="purchase-item"><a class="interface-anchor" href="basket.html">Корзина</a></li>
-				</ul>
+
+				<div class="lists-wrapper">
+					<ul class="index-interface_list">
+							<li class="index-interface_item"><a class="interface-anchor" href="sign-in.html">Войти</a></li>
+					</ul>
+					<ul class="purchase-list">
+						<div class="purchase-wrapper">
+							<li class="purchase-item"><a class="interface-anchor" href="comparison.html">Сравнить</a></li>
+							<li class="purchase-item"><a class="interface-anchor" href="basket.html">Корзина</a></li>
+						</div>
+					</ul>
+				</div>
+
 			</div>
 			<nav class="main-navigation">
 				<ul class="navigation_list">
-					<li class="navigation_item" ><a href="#">Каталог товаров</a>
+					<li class="navigation_item" ><a class="catalog-open" href="#">Каталог товаров</a>
 						<ul class="catalog_list">
 							<li class="catalog_list_item">
 								<a href="virtual.html">Виртуальная реальность</a>

@@ -1,17 +1,19 @@
 @font-face {
 		font-family: "Gilroy";
 		src:
-			local("gilroy-light-webfont.woff2"),
-			url(../fonts/gilroy-light-webfont.woff2) format("woff2");
+			local("gilroylight.woff2"),
+			url(../fonts/gilroylight.woff2) format("woff2"),
+			url(../fonts/gilroylight.woff) format("woff");
 			font-weight: 300;
 			font-style: normal;
 }
 
 @font-face {
-		font-family: "Gilroy";
+		font-family: "gilroy-extrabold";
 		src:
-			local("gilroy-extrabold-webfont.woff2"),
-			url(../fonts/gilroy-extrabold-webfont.woff2) format("woff2");
+			local("gilroyextrabold.woff2"),
+			url(../fonts/gilroyextrabold.woff2) format("woff2"),
+			url(../fonts/gilroyextrabold.woff) format("woff");
 			font-weight: 800;
 			font-style: normal;
 }
@@ -48,8 +50,22 @@ body {
 	opacity: 0.3;
 }
 
+.search_interface-purchase_wrapper {
+	display: flex;
+}
+
+.lists-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.purchase-wrapper {
+	display: flex;
+}
+
 .search_interface-purchase_wrapper form {
 	margin-top: 35px;
+	margin-left: 59px;
 }
 
 .search-input {
@@ -114,9 +130,9 @@ a {
 
 .navigation_item>a,
 .devices-slider a {
-	font-family: "Gilroy", "Arial Black", sans-serif;
+	font-family: "gilroy-extrabold", "Arial Black", sans-serif;
 	font-size: 18px;
-	font-weight: 800;
+	/*font-weight: 800;*/
 	line-height: 24px;
 	letter-spacing: 0.2em;
 	font-style: normal;
