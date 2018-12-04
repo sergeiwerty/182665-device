@@ -2,20 +2,42 @@
 		font-family: "Gilroy";
 		src:
 			local("gilroy-light-webfont.woff2"),
-			url(../fonts/"gilroy-light-webfont.woff2") format("woff2");
+			url(../fonts/gilroy-light-webfont.woff2) format("woff2");
 			font-weight: 300;
+			font-style: normal;
+}
+
+@font-face {
+		font-family: "Gilroy";
+		src:
+			local("gilroy-extrabold-webfont.woff2"),
+			url(../fonts/gilroy-extrabold-webfont.woff2) format("woff2");
+			font-weight: 800;
 			font-style: normal;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	font-style: normal;
 	text-decoration: none;
+	background-color: #ffffff;
+}
+
+.main-header {
+	margin-top: 40px;
+	margin-left: 140px;
+	margin-right: 140px;
+	position: relative;
+}
+
+.main-header img {
+	position: absolute;
+	left: 57px;
+	top: -19px;
 }
 
 .main-header img:hover {
@@ -24,6 +46,10 @@ body {
 
 .main-header img:active {
 	opacity: 0.3;
+}
+
+.search_interface-purchase_wrapper form {
+	margin-top: 35px;
 }
 
 .search-input {
@@ -44,7 +70,7 @@ body {
 .search-button {
 	line-height: 30px;
 	letter-spacing: 0.01em;
-	color: rgb(0, 0, 0,);
+	color: rgb(0, 0, 0);
 	background-color: #f7e296;
 }
 
@@ -70,8 +96,7 @@ a {
 }
 
 .interface-anchor {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 20px;
@@ -89,14 +114,14 @@ a {
 
 .navigation_item>a,
 .devices-slider a {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
 	letter-spacing: 0.2em;
 	font-style: normal;
 	color: #000000;
+	text-transform: uppercase;
 }
 
 .devices-slider a {
@@ -121,8 +146,13 @@ a {
 }
 
 .catalog_list_item a {
-	color: #000000;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
 	line-height: 36px;
+	letter-spacing: 0.01;
+	color: #000000;
+	
 }
 
 .catalog_list_item a:hover {
@@ -157,8 +187,7 @@ a {
 }
 
 .devices-slider b {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 56px;
@@ -167,8 +196,7 @@ a {
 }
 
 .advertising-info {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
@@ -179,8 +207,7 @@ a {
 .slider_1_info th,
 .slider_2_info p:nth-child(2),
 .slider_3_info th {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 13px;
 	font-weight: 300;
 	line-height: 20px;
@@ -191,8 +218,7 @@ a {
 .slider_1_info td,
 .slider_2_info p:nth-child(1),
 .slider_3_info td {
-font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 36px;
 	font-weight: 300;
 	line-height: 48px;
@@ -201,8 +227,7 @@ font-size: 100%;
 }
 
 .categories_item_heading {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
@@ -210,11 +235,8 @@ font-size: 100%;
 	color: #000000;
 }
 
-a[href="delivery.html"],
-a[href="warranty.html"],
-a[href="credit.html"] {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+.navigation_item_anchor {
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
@@ -223,8 +245,7 @@ a[href="credit.html"] {
 }
 
 .services_item_heading {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 48px;
@@ -233,8 +254,7 @@ a[href="credit.html"] {
 }
 
 .services_item_info {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
@@ -244,8 +264,7 @@ a[href="credit.html"] {
 
 .about-us h3,
 .contacts h3 {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 48px;
@@ -255,8 +274,7 @@ a[href="credit.html"] {
 
 .about-us p,
 .contacts p {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
@@ -265,8 +283,7 @@ a[href="credit.html"] {
 }
 
 .transport-companies_item {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;*/
 	font-size: 16px;
 	font-weight: 800;
 	line-height: 40px;
@@ -276,8 +293,7 @@ a[href="credit.html"] {
 
 .about-us a,
 .contacts a { 
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
@@ -311,8 +327,7 @@ a[href="credit.html"] {
 }
 
 .footer-left p {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
@@ -321,8 +336,7 @@ a[href="credit.html"] {
 }
 
 .footer-navigation_item a {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
@@ -341,8 +355,7 @@ a[href="credit.html"] {
 
 .user-interface_list_footer a,
 .purchase_list_footer a {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
@@ -362,8 +375,7 @@ a[href="credit.html"] {
 }
 
 .footer-right p {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
@@ -371,9 +383,9 @@ a[href="credit.html"] {
 	color: #ffffff;
 }
 
-label {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+.color_parameter label,
+.bluetooth-availability label {
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
@@ -382,8 +394,7 @@ label {
 }
 
 .visually-hidden input[value="ОТПРАВИТЬ"] {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
@@ -392,10 +403,9 @@ label {
 }
 
 .write-us textarea,
-input[type="text"],
-input[type="email"] {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+.write-us input[type="text"],
+.write-us input[type="email"] {
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 18px;
@@ -409,8 +419,7 @@ a[href="sign-out.html"] {
 }
 
 .container-catalog h2 {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
 	line-height: 48px;
@@ -420,8 +429,7 @@ a[href="sign-out.html"] {
 
 .breadcrumbs a, 
 .breadcrumbs li {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 24px;
@@ -433,8 +441,7 @@ a[href="sign-out.html"] {
 .filters p,
 .sorting h2 {
 	display: inline-block;
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 16px;
 	font-weight: 800;
 	line-height: 24px;
@@ -454,8 +461,7 @@ background-color: #eeeeee;
 
 .filter_color legend,
 .filter_bluetooth legend {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
@@ -466,8 +472,7 @@ background-color: #eeeeee;
 
 .color_parameter label,
 .bluetooth-availability label {
-	font-size: 100%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", "Arial Narrow", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 40px;
@@ -477,8 +482,7 @@ background-color: #eeeeee;
 }
 
 .filter_button {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	font-style: normal;
@@ -487,8 +491,7 @@ background-color: #eeeeee;
 }
 
 .enumeration_list_item a {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 24px;
@@ -498,12 +501,26 @@ background-color: #eeeeee;
 }
 
 .enumeration_list_item span {
-	font-size: 100%;
-	font-family: "Gilroy", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
 	font-style: normal;
 	letter-spacing: 0.01em;
 	color: #464646;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.search_interface-purchase_wrapper {
+	display: flex;
 }
