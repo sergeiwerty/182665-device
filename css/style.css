@@ -30,16 +30,19 @@ body {
 }
 
 .main-header {
+	width: 1040px;
 	margin-top: 40px;
-	margin-left: 140px;
-	margin-right: 140px;
+	padding: 0 60px;
+
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
 }
 
 .main-header img {
 	position: absolute;
-	left: 57px;
-	top: -19px;
+	left: 59px;
+	top: -18px;
 }
 
 .main-header img:hover {
@@ -52,27 +55,50 @@ body {
 
 .search_interface-purchase_wrapper {
 	display: flex;
+	justify-content: space-between;
+	padding-top: 1px;
+}
+
+.index-interface_list,
+.purchase-list {
+	padding: 0;
+	margin: 0;
 }
 
 .lists-wrapper {
 	display: flex;
-	justify-content: flex-end;
+	/*justify-content: flex-end;*/
+	margin-top: 47px;
+	margin-right: 61px;
 }
 
-.purchase-wrapper {
-	display: flex;
+.search-form {
+	margin-top: 36px;
+	margin-left: -1px;
+	position: relative;
 }
 
-.search_interface-purchase_wrapper form {
-	margin-top: 35px;
-	margin-left: 59px;
-}
 
 .search-input {
 	line-height: 30px;
 	letter-spacing: 0.01em;
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #f7e296;
+	padding-left: 39px;
+	padding-top: 6px;
+	border: none;
+}
+
+.search-form::before {
+	content: "";
+	position: absolute;
+	top: 14px;
+	left: 4px;
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/search.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
 
 .search-input:hover {
@@ -81,13 +107,19 @@ body {
 
 .search-input:focus {
 	color: #000000;
+	border-bottom: 2px solid black;
 }
 
 .search-button {
+  display: none;
 	line-height: 30px;
 	letter-spacing: 0.01em;
 	color: rgb(0, 0, 0);
 	background-color: #f7e296;
+}
+
+.search-button:focus {
+  display: block;
 }
 
 .search-button:hover {
@@ -101,6 +133,8 @@ body {
 
 li {
 	list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -128,11 +162,24 @@ a {
 	opacity: 0.3;
 }
 
+.navigation_list {
+	margin: 0;
+	padding: 0;
+  padding-top: 24px;
+	display: flex;
+}
+
+.navigation_list li:first-child {
+	box-sizing: border-box;
+  width: 220px; 
+	margin-right: 321px;
+} 
+
 .navigation_item>a,
 .devices-slider a {
 	font-family: "gilroy-extrabold", "Arial Black", sans-serif;
 	font-size: 18px;
-	/*font-weight: 800;*/
+	font-weight: 800;
 	line-height: 24px;
 	letter-spacing: 0.2em;
 	font-style: normal;
@@ -220,6 +267,10 @@ a {
 	color: #464646;
 }
 
+.slider_1 {
+	display: flex;
+}
+
 .slider_1_info th,
 .slider_2_info p:nth-child(2),
 .slider_3_info th {
@@ -258,6 +309,14 @@ a {
 	line-height: 24px;
 	font-style: normal;
 	color: #000000;
+}
+
+.navigation_item:nth-child(2) {
+	margin-right: 33px;
+}
+
+.navigation_item:nth-child(3) {
+	margin-right: 109px;
 }
 
 .services_item_heading {

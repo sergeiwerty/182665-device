@@ -12,28 +12,26 @@
 		<header class="main-header">
 			<img src="img/device.svg" alt="Device logo">
 			<h1 class="visually-hidden">Интернет-магазин гаджетов "Device"</h1>
+
 			<div class="search_interface-purchase_wrapper">
-				<form action="https://echo.htmlacademy.ru" method="get">
+				<form action="https://echo.htmlacademy.ru" method="get" class="search-form">
 					<input class="search-input" type="search" name="device-search" placeholder="Поиск по сайту">
 					<input class="search-button" type="submit" name="search-request" value="Найти">
 				</form>
-
 				<div class="lists-wrapper">
 					<ul class="index-interface_list">
 							<li class="index-interface_item"><a class="interface-anchor" href="sign-in.html">Войти</a></li>
 					</ul>
 					<ul class="purchase-list">
-						<div class="purchase-wrapper">
 							<li class="purchase-item"><a class="interface-anchor" href="comparison.html">Сравнить</a></li>
 							<li class="purchase-item"><a class="interface-anchor" href="basket.html">Корзина</a></li>
-						</div>
 					</ul>
 				</div>
-
 			</div>
 			<nav class="main-navigation">
 				<ul class="navigation_list">
-					<li class="navigation_item" ><a class="catalog-open" href="#">Каталог товаров</a>
+					<li class="navigation_item" >
+						<a class="catalog-open" href="#">Каталог товаров</a>
 						<ul class="catalog_list">
 							<li class="catalog_list_item">
 								<a href="virtual.html">Виртуальная реальность</a>
@@ -66,27 +64,32 @@
 					</li>
 				</ul>
 			</nav>
+			
 		</header>
 
 		<main class="container">
 			<div class="devices-slider">
 				<div class="slider_1">
-					<img src="img/selfie-stick.png" width="384" alt="селфи-палка">
-					<b>Делай селфи, как Бен Стиллер!</b>
-					<p class="advertising-info">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-					<a href="selfie-stick.html">Подробнее</a>
-					<table class="slider_1_info">
-						<tr>
-							<th>Длина палки</th>
-							<th>Вес палки</th>
-							<th>Материал</th>
-						</tr>
-						<tr>
-							<td>8,5 м</td>
-							<td>5 кг</td>
-							<td>Карбон</td>
-						</tr>
-					</table>
+					<div>
+						<img src="img/selfie-stick.png" width="384" alt="селфи-палка">
+					</div>
+					<div>
+						<b>Делай селфи, как Бен Стиллер!</b>
+						<p class="advertising-info">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+						<a href="selfie-stick.html">Подробнее</a>
+						<table class="slider_1_info">
+							<tr>
+								<th>Длина палки</th>
+								<th>Вес палки</th>
+								<th>Материал</th>
+							</tr>
+							<tr>
+								<td>8,5 м</td>
+								<td>5 кг</td>
+								<td>Карбон</td>
+							</tr>
+						</table>
+					</div>	
 				</div>
 				<div class="slider_2">
 					<img src="img/smart-watch.png" width="345" alt="умные часы">
@@ -266,19 +269,19 @@
 					<li class="socials_button">
 						<a href="https://www.facebook.com/device-shop">
 							<span class="visually-hidden">мы на фейсбуке</span>
-							<img src="img/fb.svg">
+							<img src="img/fb.svg" alt="facebook">
 						</a>
 					</li>
 					<li class="socials_button">
 						<a href="https://www.instagram.com/device-shop">
 							<span class="visually-hidden">мы в инстаграмме</span>
-							<img src="img/instagram.svg">
+							<img src="img/instagram.svg" alt="instagram">
 						</a>
 					</li>
 					<li class="socials_button">
 						<a href="https://www.twitter.com/device-shop">
 							<span class="visually-hidden">мы в твиттере</span>
-							<img src="img/twitter.svg">
+							<img src="img/twitter.svg" alt="twitter]">
 						</a>
 					</li>
 				</ul>
@@ -299,7 +302,7 @@
 				</ul>
 				<p>Тел.: +7(495)495-95-95</p>
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
-					<img src="img/logo-html.svg">
+					<img src="img/logo-html.svg" alt="html academy">
 				</a>
 			</div>
 		</footer>
