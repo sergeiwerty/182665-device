@@ -317,16 +317,24 @@
 		</footer>
 
 		<div class="pop-up_form">
-			<button type="button">
-				<span class="visually-hidden">кнопка закрытия окна</span>
-			</button>
+			<div class="pop-up-button_wrapper">
+				<button type="button">
+					<span class="visually-hidden">кнопка закрытия окна</span>
+				</button>
+			</div>
 			<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-				<label for="write-us">Ваше имя:</label>
-				<input type="text" name="write-us" id="write-us" placeholder="Имя Фамилия">
-				<label for="your-email">Ваше e-mail:</label>
-				<input type="email" name="your-email" id="your-email" placeholder="email@example.com">
-				<label for="text-of-message">Текст письма:</label>
-				<textarea name="input-message" id="text-of-message" rows="5">В свободной форме</textarea>
+				<div class="input-name_wrapper">
+					<label for="write-us">Ваше имя:</label>
+					<input type="text" name="write-us" id="write-us" placeholder="Имя Фамилия">
+				</div>
+				<div class="input-email_wrapper">
+					<label for="your-email">Ваш e-mail:</label>
+					<input type="email" name="your-email" id="your-email" placeholder="email@example.com">
+				</div>
+				<div class="textarea_wrapper">
+					<label for="text-of-message">Текст письма:</label>
+					<textarea name="input-message" id="text-of-message" rows="5">В свободной форме</textarea>
+				</div>
 				<label class="visually-hidden">Отправить данные формы
 					<input type="submit" name="write-us_submit" value="ОТПРАВИТЬ">
 				</label>
