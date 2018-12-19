@@ -34,7 +34,6 @@ body {
 	height: 298px;
 	margin-top: 40px;
 	padding: 0 60px;
-
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -185,12 +184,54 @@ body {
 
 .navigation_list .navigation_item:first-child {
 	box-sizing: border-box;
-	/*width: 240px; */
 	margin-right: auto;
 } 
 
 .catalog_list {
 	display: none;
+}
+
+.slider-wrapper {
+	width: 1160px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slider-wrapper_inner {
+	overflow: hidden;
+}
+
+.devices-slider {
+	display: flex;
+	width: 300%;
+}
+
+.slider-wrapper input[type="radio"] {
+	display: none;
+}
+
+.radio_button1:checked ~ label[for="btn-1"] {
+	border: 2px solid #cccccc;
+}
+
+.radio_button2:checked ~ label[for="btn-2"] {
+	border: 2px solid #cccccc;
+}
+
+.radio_button3:checked ~ label[for="btn-3"] {
+	border: 2px solid #cccccc;
+}
+
+#btn-1:checked ~ .slider-wrapper_inner .devices-slider {
+	transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-wrapper_inner .devices-slider {
+	transform: translate(-1160px);
+}
+
+#btn-3:checked ~ .slider-wrapper_inner .devices-slider {
+	transform: translate(-2320px);
 }
 
 .navigation_item>a,
@@ -207,6 +248,14 @@ body {
 
 .devices-slider a {
 	background-color: #f0c52e;
+}
+
+.slider_button {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 }
 
 .navigation_item>a:hover {
@@ -306,8 +355,7 @@ body {
 .slider_2,
 .slider_3 {
 	display: flex;
-
-	width: 1040px;
+	width: 1160px;
 	margin-left: auto;
 	margin-right: auto;
 }

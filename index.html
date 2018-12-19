@@ -67,122 +67,116 @@
 		</header>
 
 		<main class="container">
-			<div class="devices-slider">
-				<div class="slider_1">
-					<div>
-						<img src="img/selfie-stick.png" width="384" alt="селфи-палка">
-					</div>
-					<div>
-						<b>Делай селфи, как Бен Стиллер!</b>
-						<p class="advertising-info">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-						<a href="selfie-stick.html" class="anchor-reset">Подробнее</a>
-						<table class="slider_1_info">
-							<tr>
-								<th>Длина палки</th>
-								<th>Вес палки</th>
-								<th>Материал</th>
-							</tr>
-							<tr>
-								<td>8,5 м</td>
-								<td>5 кг</td>
-								<td>Карбон</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="slider_2">
-					<div>
-					<img src="img/smart-watch.png" width="345" alt="умные часы">
-					</div>
-					<div>
-						<b>Худеем правильно!</b>
-						<p class="advertising-info">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-						<a href="smart-watch.html" class="anchor-reset">Подробнее</a>
-						<div class="slider_2_info">
-							<p>48 часов</p>
-							<p>Без подзарядки</p>
+			<div class="slider-wrapper">
+				<input class="radio_button1" type="radio" id="btn-1" name="toggle" checked>
+				<input class="radio_button2" type="radio" id="btn-2" name="toggle">
+				<input class="radio_button3" type="radio" id="btn-3" name="toggle">
+				<label for="btn-1" class="slider_button"></label>
+				<label for="btn-2" class="slider_button"></label>
+				<label for="btn-3" class="slider_button"></label>
+				<div class="slider-wrapper_inner">
+					<div class="devices-slider">
+						<div class="slider_1">
+							<div class="slider_column_left">
+								<img src="img/selfie-stick.png" width="384" alt="селфи-палка">
+							</div>
+							<div class="slider_column_right">
+								<b>Делай селфи, как Бен Стиллер!</b>
+								<p class="advertising-info">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+								<a href="selfie-stick.html" class="anchor-reset">Подробнее</a>
+								<table class="slider_1_info">
+									<tr>
+										<th>Длина палки</th>
+										<th>Вес палки</th>
+										<th>Материал</th>
+									</tr>
+									<tr>
+										<td>8,5 м</td>
+										<td>5 кг</td>
+										<td>Карбон</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="slider_2">
+							<div>
+							<img src="img/smart-watch.png" width="345" alt="умные часы">
+							</div>
+							<div>
+								<b>Худеем правильно!</b>
+								<p class="advertising-info">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+								<a href="smart-watch.html" class="anchor-reset">Подробнее</a>
+								<div class="slider_2_info">
+									<p>48 часов</p>
+									<p>Без подзарядки</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider_3">
+							<div>
+								<img src="img/quadcopter.png" width="526" alt="квадрокоптер">
+							</div>
+							<div>
+								<b>Порхает как бабочка, жалит как пчела!</b>
+								<p class="advertising-info">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+								<a href="quadcopter.html" class="anchor-reset">Подробнее</a>
+								<table class="slider_3_info">
+									<tr>
+										<th>Дальность полёта</th>
+										<th>Радиус поражения</th>
+									</tr>
+									<tr>
+										<td>800 м</td>
+										<td>50 м</td>
+									</tr>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="slider_3">
-					<div>
-						<img src="img/quadcopter.png" width="526" alt="квадрокоптер">
-					</div>
-					<div>
-						<b>Порхает как бабочка, жалит как пчела!</b>
-						<p class="advertising-info">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-						<a href="quadcopter.html" class="anchor-reset">Подробнее</a>
-						<table class="slider_3_info">
-							<tr>
-								<th>Дальность полёта</th>
-								<th>Радиус поражения</th>
-							</tr>
-							<tr>
-								<td>800 м</td>
-								<td>50 м</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<ul class="slider_buttons">
-					<li class="buttons_turn-on list-style_reset">
-						<button type="button">
-							<span class="visually-hidden">переключиться на первый слайд</span>
-						</button>
-					</li>
-					<li class="buttons_turn-on list-style_reset">
-						<button type="button">
-							<span class="visually-hidden">переключиться на  второй слайд</span>
-						</button>
-					</li>
-					<li class="buttons_turn-on list-style_reset">
-						<button type="button">
-							<span class="visually-hidden">переключиться на третий слайд</span>
-						</button>
-					</li>
-				</ul>
 			</div>
-			<section class="product-categories">
-				<h2 class="visually-hidden">Категории наших товаров</h2>
-				<ul class="categories_list">
-					<li class="categories_item list-style_reset">
-						<a href="virtual.html" class="anchor-reset">
-							<img src="img/popular-1.svg" alt="виртуальная реальность">
-						</a>
-						<h3 class="categories_item_heading">Виртуальная реальность</h3>
-					</li>
-					<li class="categories_item ">
-						<a href="monopods.html" class="anchor-reset">
-							<img src="img/popular-2.svg" alt="моноподы для селфи">
-						</a>
-						<h3 class="categories_item_heading">Моноподы для селфи</h3>
-					</li>
+				<section class="product-categories">
+					<h2 class="visually-hidden">Категории наших товаров</h2>
+					<ul class="categories_list">
 						<li class="categories_item list-style_reset">
-							<a href="action-cameras.html" class="anchor-reset">
-								<img src="img/popular-3.svg" alt="экшн-камеры">
+							<a href="virtual.html" class="anchor-reset">
+								<img src="img/popular-1.svg" alt="виртуальная реальность">
 							</a>
-							<h3 class="categories_item_heading">Экшн-камеры</h3>
+							<h3 class="categories_item_heading">Виртуальная реальность</h3>
 						</li>
-						<li class="categories_item list-style_reset">
-							<a href="bracelets.html" class="anchor-reset">
-								<img src="img/popular-4.svg" alt="фитнес-браслеты">
+						<li class="categories_item ">
+							<a href="monopods.html" class="anchor-reset">
+								<img src="img/popular-2.svg" alt="моноподы для селфи">
 							</a>
-							<h3 class="categories_item_heading">Фитнес браслеты</h3>
+							<h3 class="categories_item_heading">Моноподы для селфи</h3>
 						</li>
-						<li class="categories_item list-style_reset">
-							<a href="smart-watch.html" class="anchor-reset">
-								<img src="img/popular-5.svg" alt="умные часы">
-							</a>
-							<h3 class="categories_item_heading">Умные часы</h3>
-						</li>
-						<li class="categories_item list-style_reset">
-							<a href="quadcopters.html" class="anchor-reset">
-								<img src="img/popular-6.svg" alt="квадрокоптеры">
-							</a>
-							<h3 class="categories_item_heading">Квадрокоптеры</h3>
-						</li>
-					</ul>
-			</section>
+							<li class="categories_item list-style_reset">
+								<a href="action-cameras.html" class="anchor-reset">
+									<img src="img/popular-3.svg" alt="экшн-камеры">
+								</a>
+								<h3 class="categories_item_heading">Экшн-камеры</h3>
+							</li>
+							<li class="categories_item list-style_reset">
+								<a href="bracelets.html" class="anchor-reset">
+									<img src="img/popular-4.svg" alt="фитнес-браслеты">
+								</a>
+								<h3 class="categories_item_heading">Фитнес браслеты</h3>
+							</li>
+							<li class="categories_item list-style_reset">
+								<a href="smart-watch.html" class="anchor-reset">
+									<img src="img/popular-5.svg" alt="умные часы">
+								</a>
+								<h3 class="categories_item_heading">Умные часы</h3>
+							</li>
+							<li class="categories_item list-style_reset">
+								<a href="quadcopters.html" class="anchor-reset">
+									<img src="img/popular-6.svg" alt="квадрокоптеры">
+								</a>
+								<h3 class="categories_item_heading">Квадрокоптеры</h3>
+							</li>
+						</ul>
+				</section>
+
 			<section class="services">
 				<h2 class="visually-hidden">Наши услуги</h2>
 					<ul class="services_list">
