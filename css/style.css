@@ -71,7 +71,7 @@ body {
 
 .index-interface_list {
 	width: 260px;
-padding-left: 21px;
+	padding-left: 21px;
 }
 
 .purchase-list {
@@ -81,8 +81,38 @@ padding-left: 21px;
 	margin-left: 7px;
 }
 
+.purchase-list li:nth-child(1) {
+	position: relative; 
+	padding-left: 30px;
+}
+
+.purchase-list li:nth-child(1):before {
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: -1px;
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/compare.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
 .purchase-list li:nth-child(2) {
-	/*! margin-right: 19px; */
+	position: relative; 
+	padding-left: 30px;
+}
+
+.purchase-list li:nth-child(2):before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 8px;
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/cart.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
 
 .lists-wrapper {
@@ -96,7 +126,6 @@ padding-left: 21px;
 .search-form {
 	margin-top: 30px;
 	margin-left: -1px;
-/*	margin-right: 204px;*/
 	padding-top: 3px;
 	position: relative;
 	width: 440px;
@@ -175,7 +204,20 @@ padding-left: 21px;
 }
 
 .index-interface_item {
+	position: relative; 
 	padding-left: 7px;
+}
+
+.index-interface_item:before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: -20px;
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/user.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
 
 .purchase-list li:nth-child(1) {
@@ -214,6 +256,24 @@ padding-left: 21px;
 	display: flex;
 }
 
+.catalog-open {
+	position: relative;
+	padding-right: 30px;
+}
+
+.catalog-open:after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/plus.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
 .navigation_list li:nth-child(4) {
 	margin-right: -4px;
 }
@@ -225,6 +285,11 @@ padding-left: 21px;
 
 .catalog_list {
 	display: none;
+}
+
+.catalog-open:hover + .catalog_list {
+	display: flex;
+  flex-direction: column;
 }
 
 .slider-wrapper {
@@ -729,7 +794,6 @@ a[href="sign-out.html"] {
 
 .catalog_wrapper {
 	width: 100%;
-
 	background-image: linear-gradient(to right, #eeeeee 36.77%, #ffffff 36.77%);
 	width: 100%;
 }
