@@ -289,13 +289,14 @@ body {
 
 .catalog-open:hover + .catalog_list {
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .slider-wrapper {
 	width: 1160px;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 .slider-wrapper_inner {
@@ -357,6 +358,24 @@ body {
 	height: 12px;
 	border-radius: 50%;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+.slider-wrapper label:nth-of-type(1) {
+	position: absolute;
+	top: 215px;
+	left: 997px;
+}
+
+.slider-wrapper label:nth-of-type(2) {
+	position: absolute;
+	top: 217px;
+	left: 1032px;
+}
+
+.slider-wrapper label:nth-of-type(3) {
+	position: absolute;
+	top: 217px;
+	left: 1065px;
 }
 
 .navigation_item>a:hover {
