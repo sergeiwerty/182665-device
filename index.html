@@ -70,7 +70,7 @@
 			</nav>
 		</header>
 
-		<main class="container">
+		<main class="container-index">
 			<div class="slider-wrapper">
 				<div class="devices-slider">
 					<input class="radio_button1" type="radio" id="btn-1" name="toggle" checked>
@@ -81,12 +81,11 @@
 					<label for="btn-3" class="slider_button"></label>
 					<div class="slider-wrapper_inner">
 						<div class="slider_1">
-							<div class="slider_column_left">
+							<div class="slider1_column_left">
 								<img src="img/selfie-stick.png" width="384" alt="селфи-палка">
 							</div>
-							<div class="slider_column_right">
+							<div class="slider1_column_right">
 								<b>Делай селфи,<br>как Бен Стиллер!</b>
-								<img src="img/01.png" width="167" alt="слайд №1">
 								<p class="advertising-info">Самая длинная палка для селфи доступна в нашем магазине.</p> 
 								<p class="advertising-info">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 								<a href="selfie-stick.html" class="anchor-reset">Подробнее</a>
@@ -105,10 +104,10 @@
 							</div>
 						</div>
 						<div class="slider_2">
-							<div class="slider_column_left">
+							<div class="slider2_column_left">
 							<img src="img/smart-watch.png" width="345" alt="умные часы">
 							</div>
-							<div class="slider_column_right">
+							<div class="slider2_column_right">
 								<b>Худеем <br> правильно!</b>
 								<p class="advertising-info">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 								<a href="smart-watch.html" class="anchor-reset">Подробнее</a>
@@ -119,21 +118,21 @@
 							</div>
 						</div>
 						<div class="slider_3">
-							<div>
+							<div class="slider3_column_left">
 								<img src="img/quadcopter.png" width="526" alt="квадрокоптер">
 							</div>
-							<div>
+							<div class="slider3_column_right">
 								<b>Порхает как бабочка, жалит как пчела!</b>
 								<p class="advertising-info">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 								<a href="quadcopter.html" class="anchor-reset">Подробнее</a>
 								<table class="slider_3_info">
 									<tr>
-										<th>Дальность полёта</th>
-										<th>Радиус поражения</th>
-									</tr>
-									<tr>
 										<td>800 м</td>
 										<td>50 м</td>
+									</tr>
+									<tr>
+										<th>Дальность полёта</th>
+										<th>Радиус поражения</th>
 									</tr>
 								</table>
 							</div>
@@ -194,22 +193,28 @@
 					<div class="services-info">
 						<ul class="services_list">
 							<li class="services_item list-style_reset">
-								<h3 id="delivery" class="services_item_heading">Доставка</h3>
-								<p class="services_item_info">Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-								<a href="delivery.html" class="anchor-reset">
-									<img src="img/delivery.svg" alt="доставка">
+								<div class="services_item_column">
+									<h3 id="delivery" class="services_item_heading">Доставка</h3>
+									<p class="services_item_info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+								</div>
+								<a class="services_image_1" href="delivery.html" class="anchor-reset">
+									<img src="img/delivery.svg" width="136px" alt="доставка">
 								</a>
 							</li>
 							<li class="services_item list-style_reset">
-								<h3 id="warranty" class="services_item_heading">Гарантия</h3>
-								<p class="services_item_info">Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте мы дадим вам новый. Товар, не дом, конечно же.</p>
+								<div class="services_item_column">
+									<h3 id="warranty" class="services_item_heading">Гарантия</h3>
+									<p class="services_item_info">Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте мы дадим вам новый. Товар, не дом, конечно же.</p>
+								</div>
 								<a href="warranty.html" class="anchor-reset">
 									<img src="img/warranty.svg" alt="гарантия">
 								</a>
 							</li>
 							<li class="services_item list-style_reset">
-								<h3 class="services_item_heading">Кредит</h3>
-								<p class="services_item_info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+								<div class="services_item_column">
+									<h3 class="services_item_heading">Кредит</h3>
+									<p class="services_item_info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+								</div>
 								<a href="credit.html" class="anchor-reset">
 									<img src="img/credit.svg" alt="кредит">
 								</a>
@@ -222,23 +227,27 @@
 				<h2 class="visually-hidden">Производители наших товаров</h2>
 				<ul class="partners_list">
 					<li class="partners_item list-style_reset">
-						<a href="catalog/dji.html" class="anchor-reset">
-							<img src="img/dji.png" width="260" alt="DJI">
+						<a href="catalog/dji.html" class="anchor-reset partners-anchor">
+							<img class="colorless" src="img/dji.png" width="260" alt="DJI">
+							<img class="in-color" src="img/dji-color.jpg" width="260" alt="DJI">
 						</a>
 					</li>
 					<li class="partners_item list-style_reset">
-						<a href="catalog/sp_gadjets.html" class="anchor-reset">
+						<a href="catalog/sp_gadjets.html" class="anchor-reset partners-anchor">
 							<img src="img/sp-gadjets.png" width="260" alt="Sp Gadjets">
+							<img class="in-color" src="img/sp-gadjets-color.jpg" width="260" alt="Sp Gadjets">
 						</a>
 					</li>
 					<li class="partners_item list-style_reset">
-						<a href="catalog/go_pro.html" class="anchor-reset">
+						<a href="catalog/go_pro.html" class="anchor-reset partners-anchor">
 							<img src="img/go-pro.png" width="260" alt="Go Pro">
+							<img class="in-color" src="img/go-pro-color.jpg" width="260" alt="Go Pro">
 						</a>
 					</li>
 					<li class="partners_item list-style_reset">
-						<a href="catalog/vive.html" class="anchor-reset">
+						<a href="catalog/vive.html" class="anchor-reset partners-anchor">
 							<img src="img/vive.png" width="260" alt="Vive">
+							<img class="in-color" src="img/vive-color.jpg" width="260" alt="Vive">
 						</a>
 					</li>
 				</ul>
@@ -249,7 +258,7 @@
 					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 					<p>Мы можем доставить ваш товар в самые отдалённые точки России! DEVICE работает со многими транспортными компаниями:</p>
 					<ul class="transport-companies_list">
-						<li class="transport-companies_item list-style_reset">Деловые линии</li>
+						<li class="transport-companies_item list-style_reset">Деловые Линии</li>
 						<li class="transport-companies_item list-style_reset">Автотрейдинг</li>
 						<li class="transport-companies_item list-style_reset">ЖелДорЭкспедиция</li>
 					</ul>
@@ -319,7 +328,7 @@
 							</li>
 						</ul>
 					</div>
-					<p>Тел.: +7(495)495-95-95</p>
+					<p>Тел.: +7 (495) 495-95-95</p>
 					<a href="https://htmlacademy.ru/intensive/htmlcss" class="anchor-reset">
 						<img src="img/logo-html.svg" alt="html academy">
 					</a>
@@ -328,7 +337,7 @@
 		</footer>
 
 		<div class="pop-up_form">
-				<button type="button">
+				<button class="pop-up_close" type="button">
 					<span class="visually-hidden">кнопка закрытия окна</span>
 				</button>
 			<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
