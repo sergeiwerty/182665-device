@@ -1572,6 +1572,7 @@ a[href="sign-out.html"] {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	position: relative;
 }
 
 .breadcrumbs-wrapper {
@@ -1620,8 +1621,21 @@ a[href="sign-out.html"] {
 
 .catalog_wrapper {
 	width: 100%;
-	background-image: linear-gradient(to right, #eeeeee 36.77%, #ffffff 36.77%);
+	background-image: linear-gradient(to right, #eeeeee 36.77%, transparent 36.77%);
+  position: relative; 
+  z-index: -1;
+}
+
+.container-catalog::before {
+	content: "";
+	position: absolute;
 	width: 100%;
+	height: 70px;
+	top: 180px;
+	background-color: #000000;
+	opacity: 0.08;
+/* 	background-image: linear-gradient(to right, #dcdcdc 0, #dcdcdc 36.77%, #ebebeb 36.77%, #ebebeb 100%); */
+	z-index: 1;
 }
 
 .catalog_content {
@@ -1661,19 +1675,29 @@ a[href="sign-out.html"] {
 
 .filters {
 	margin-left: 52px;
-/*	margin-right: 140px;*/
+  margin-right: 70px;
 	width: 200px;
 }
 
 .filter_color,
 .filter_bluetooth {
 	border: none;
+	padding: 0;
+}
+
+.filter_bluetooth {
+	margin-bottom: 32px;
 }
 
 .catalog_sorting {
 	display: flex;
 	flex-direction: column;
 	width: 852px;
+}
+
+.sorting {
+	background-color: transparent;
+  padding-left: 89px;
 }
 
 .catalog-enumeration_list {
@@ -1703,11 +1727,34 @@ a[href="sign-out.html"] {
 	font-style: normal;
 	letter-spacing: 0.2em;
 	color: #000000;
-	background-color: #dbdbdb;
+}
+
+.filters p {
+	padding-top: 5px;
+  padding-left: 20px;
+	margin-bottom: 93px
 }
 
 .sorting h2 {
-	background-color: #ebebeb;
+  margin-top: 21px;
+  margin-right: 48px;
+  letter-spacing: 0.225em;
+}
+
+.sorting a:nth-of-type(1) {
+  margin-right: 24px;
+}
+
+.sorting a:nth-of-type(2) {
+  margin-right: 29px;
+}
+
+.sorting a:nth-of-type(3) {
+  margin-right: 229px;
+}
+
+.sorting a:nth-of-type(4) {
+  margin-right: 15px;
 }
 
 .sorting a:nth-child(-n+4) {
@@ -1715,19 +1762,37 @@ a[href="sign-out.html"] {
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 18px;
+  letter-spacing: 0.01em;
 	font-style: normal;
-	letter-spacing: 0;
 	color: rgba(0, 0, 0, 0.3);
 }
 
 .filters form {
-background-color: #eeeeee;
+  background-color: #eeeeee;
+  padding-left: 15px;
+}
+
+.filters .range {
+  width: 201px;
+  height: 138px;
+  border-top: 2px solid black;
+	border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  margin-left: 2px;
 }
 
 .filter_color_list,
 .filter_bluetooth_list {
 	margin: 0;
 	padding: 0;
+  padding-top: 17px;
+}
+
+.filter_color_list {
+	width: 201px;
+	padding-bottom: 32px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid black;
 }
 
 .filter_color legend,
@@ -1750,15 +1815,66 @@ background-color: #eeeeee;
 	font-style: normal;
 	letter-spacing: 0.01em;
 	color: #000000;
+  padding-left: 39px;
+  position: relative;
+}
+
+.color_parameter label::before {
+  content: url(../img/checkbox-off.svg);  
+	position: absolute;
+	top: -4px;
+	left: -1px;
+}
+
+.color_parameter input:checked ~ label::before {
+  content: url(../img/checkbox-on.svg)
+}
+
+.bluetooth-availability label {
+  position: relative;
+}
+
+.bluetooth-availability label::before {
+  content: url(../img/radio-off.svg);
+	position: absolute;
+	top: -3px;
+	left: -1px;
+}
+
+.bluetooth-availability input:checked ~ label::before {
+	content: url(../img/radio-on.svg);
+}
+
+.filter_button:hover {
+	color: #f7e184;
+	background-color: #f0c52e;
 }
 
 .filter_button {
+	width: 206px;
+	height: 40px;
+	position: relative;
 	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
 	font-style: normal;
 	letter-spacing: 0.2em;
 	color: #000000;
+	background-color: transparent;
+	border: 0;
+	z-index: 2;
+}
+
+
+.filter_button::after {
+	content: "";
+	position: absolute;
+	top: 16px;
+	right: 4px;
+  width: 200px;
+	height: 8px;
+	background-color: #f0c52e;
+	z-index: -1;
 }
 
 .enumeration_list_item a {
