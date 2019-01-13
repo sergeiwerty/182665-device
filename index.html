@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<img src="img/device.svg" alt="Device logo">
+			<img src="img/device.svg" alt="Device logo" width="164" height="36">
 			<h1 class="visually-hidden">Интернет-магазин гаджетов "Device"</h1>
 			<div class="search_interface-purchase_wrapper">
 				<form action="https://echo.htmlacademy.ru" method="get" class="search-form">
@@ -19,16 +19,29 @@
 				<div class="lists-wrapper">
 					<ul class="index-interface_list">
 							<li class="index-interface_item list-style_reset">
-								<a class="interface-anchor anchor-reset" href="sign-in.html">Войти</a>
+								<a class="interface-anchor anchor-reset" href="sign-in.html">
+									<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+									<p>Войти</p>
+								</a>
 							</li>
 					</ul>
 					<ul class="purchase-list">
-							<li class="purchase-item list-style_reset">
-								<a class="interface-anchor anchor-reset" href="comparison.html">Сравнить</a>
-							</li>
-							<li class="purchase-item list-style_reset">
-								<a class="interface-anchor anchor-reset" href="basket.html">Корзина</a>
-							</li>
+						<li class="purchase-item list-style_reset">
+							<a class="interface-anchor anchor-reset" href="comparison.html">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 10 10">
+									<image id="compare" width="10" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAQkXOQucU0RxAAAAIklEQVQI12NggIH/DP9hTCYGLIAFQ+Q/AwMTsja82ukmCABKbQUQfjBk+QAAAABJRU5ErkJggg=="/>
+								</svg>
+								Сравнить
+							</a>
+						</li>
+						<li class="purchase-item list-style_reset">
+							<a class="interface-anchor anchor-reset" href="basket.html">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+									<image id="cart" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAQoAEB/JExX8AAAAkUlEQVQY023OLQ+BYRjF8d/ueZlNkmwCwSbyrRTNR5JkJgkmkLxFDQ9JFIzNHuH2SM855ez8d107RDUsnZxtNWMRfmBopqVpZBCLgraqp5qVHhJdHRWPgqPgYK9mhz7Gul7BHXUTH/A21cCdjVTqLf05pnVwBUWZYkqCmzzdgiQXXLNXOReXXHCibPFflHmu9AX2GzNnQMocjgAAAABJRU5ErkJggg=="/>
+								</svg>
+								Корзина
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -47,7 +60,7 @@
 								<a href="quadcopters.html" class="anchor-reset">Квадрокоптеры</a>
 							</li>
 							<li class="catalog_list_item list-style_reset">
-								<a href="monopods.html" class="anchor-reset">Моноподы для селфи</a>
+								<a href="catalog.html" class="anchor-reset">Моноподы для селфи</a>
 							</li>
 							<li class="catalog_list_item list-style_reset">
 								<a href="smart-watch.html" class="anchor-reset">Умные часы</a>
@@ -82,7 +95,7 @@
 					<div class="slider-wrapper_inner">
 						<div class="slider_1">
 							<div class="slider1_column_left">
-								<img src="img/selfie-stick.png" width="384" alt="селфи-палка">
+								<img src="img/selfie-stick.png" alt="селфи-палка" width="384" height="486">
 							</div>
 							<div class="slider1_column_right">
 								<b>Делай селфи,<br>как Бен Стиллер!</b>
@@ -101,11 +114,12 @@
 										<th>Материал</th>
 									</tr>
 								</table>
+								<p class="product-rating number1">01</p>
 							</div>
 						</div>
 						<div class="slider_2">
 							<div class="slider2_column_left">
-							<img src="img/smart-watch.png" width="345" alt="умные часы">
+								<img src="img/smart-watch.png" alt="умные часы" width="345" height="485">
 							</div>
 							<div class="slider2_column_right">
 								<b>Худеем <br> правильно!</b>
@@ -114,12 +128,13 @@
 								<div class="slider_2_info">
 									<p>48 часов</p>
 									<p>Без подзарядки</p>
+									<p class="product-rating number2">02</p>
 								</div>
 							</div>
 						</div>
 						<div class="slider_3">
 							<div class="slider3_column_left">
-								<img src="img/quadcopter.png" width="526" alt="квадрокоптер">
+								<img src="img/quadcopter.png" alt="квадрокоптер" width="526" height="334">
 							</div>
 							<div class="slider3_column_right">
 								<b>Порхает как бабочка, жалит как пчела!</b>
@@ -135,6 +150,7 @@
 										<th>Радиус поражения</th>
 									</tr>
 								</table>
+								<p class="product-rating number3">03</p>
 							</div>
 						</div>
 					</div>
@@ -145,78 +161,78 @@
 				<ul class="categories_list">
 					<li class="categories_item list-style_reset">
 						<a href="virtual.html" class="anchor-reset categories_link">
-							<img src="img/popular-1.svg" alt="виртуальная реальность">
+							<img src="img/popular-1.svg" alt="виртуальная реальность" width="97" height="55">
 						</a>
 						<h3 class="categories_item_heading">Виртуальная реальность</h3>
 					</li>
 					<li class="categories_item ">
-						<a href="monopods.html" class="anchor-reset categories_link">
-							<img src="img/popular-2.svg" alt="моноподы для селфи">
+						<a href="catalog.html" class="anchor-reset categories_link">
+							<img src="img/popular-2.svg" alt="моноподы для селфи" width="86" height="117">
 						</a>
 						<h3 class="categories_item_heading">Моноподы для селфи</h3>
 					</li>
-						<li class="categories_item list-style_reset">
-							<a href="action-cameras.html" class="anchor-reset categories_link">
-								<img src="img/popular-3.svg" alt="экшн-камеры">
-							</a>
-							<h3 class="categories_item_heading">Экшн-камеры</h3>
-						</li>
-						<li class="categories_item list-style_reset">
-							<a href="bracelets.html" class="anchor-reset categories_link">
-								<img src="img/popular-4.svg" alt="фитнес-браслеты">
-							</a>
-							<h3 class="categories_item_heading">Фитнес-браслеты</h3>
-						</li>
-						<li class="categories_item list-style_reset">
-							<a href="smart-watch.html" class="anchor-reset categories_link">
-								<img src="img/popular-5.svg" alt="умные часы">
-							</a>
-							<h3 class="categories_item_heading">Умные часы</h3>
-						</li>
-						<li class="categories_item list-style_reset">
-							<a href="quadcopters.html" class="anchor-reset categories_link">
-								<img src="img/popular-6.svg" alt="квадрокоптеры">
-							</a>
-							<h3 class="categories_item_heading">Квадрокоптеры</h3>
-						</li>
-					</ul>
+					<li class="categories_item list-style_reset">
+						<a href="action-cameras.html" class="anchor-reset categories_link">
+							<img src="img/popular-3.svg" alt="экшн-камеры" width="71" height="87">
+						</a>
+						<h3 class="categories_item_heading">Экшн-камеры</h3>
+					</li>
+					<li class="categories_item list-style_reset">
+						<a href="bracelets.html" class="anchor-reset categories_link">
+							<img src="img/popular-4.svg" alt="фитнес-браслеты" width="107" height="65">
+						</a>
+						<h3 class="categories_item_heading">Фитнес-браслеты</h3>
+					</li>
+					<li class="categories_item list-style_reset">
+						<a href="smart-watch.html" class="anchor-reset categories_link">
+							<img src="img/popular-5.svg" alt="умные часы" width="56" height="98">
+						</a>
+						<h3 class="categories_item_heading">Умные часы</h3>
+					</li>
+					<li class="categories_item list-style_reset">
+						<a href="quadcopters.html" class="anchor-reset categories_link">
+							<img src="img/popular-6.svg" alt="квадрокоптеры" width="132" height="69">
+						</a>
+						<h3 class="categories_item_heading">Квадрокоптеры</h3>
+					</li>
+				</ul>
 			</section>
 
 			<section class="services">
 				<h2 class="visually-hidden">Наши услуги</h2>
 				<div class="services-wrapper">
 					<div class="tabs-wrapper">
-						<button type="button">Доставка</button>
-						<button type="button">Гарантия</button>
-						<button type="button">Кредит</button>
+						<button type="button" class="delivery-button background-black delete-after">Доставка</button>
+						<button type="button" class="guarantee-button">Гарантия</button>
+						<button type="button" class="credit-button">Кредит</button>
 					</div>
 					<div class="services-info">
 						<ul class="services_list">
-							<li class="services_item list-style_reset">
-								<div class="services_item_column">
+							<li class="services_item list-style_reset li-visible">
+								<div class="services_item_column_1">
 									<h3 id="delivery" class="services_item_heading">Доставка</h3>
 									<p class="services_item_info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 								</div>
 								<a class="services_image_1" href="delivery.html" class="anchor-reset">
-									<img src="img/delivery.svg" width="136px" alt="доставка">
+									<img src="img/delivery.svg" alt="доставка" width="136" height="164">
 								</a>
 							</li>
-							<li class="services_item list-style_reset">
-								<div class="services_item_column">
+							<li class="services_item list-style_reset li-unvisible">
+								<div class="services_item_column_2">
 									<h3 id="warranty" class="services_item_heading">Гарантия</h3>
-									<p class="services_item_info">Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте мы дадим вам новый. Товар, не дом, конечно же.</p>
+									<p class="services_item_info">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
 								</div>
-								<a href="warranty.html" class="anchor-reset">
-									<img src="img/warranty.svg" alt="гарантия">
+								<a class="services_image_2" href="warranty.html" class="anchor-reset">
+									<img src="img/warranty.svg" alt="гарантия" width="171" height="194">
 								</a>
 							</li>
-							<li class="services_item list-style_reset">
-								<div class="services_item_column">
+							<li class="services_item list-style_reset li-unvisible">
+								<div class="services_item_column_3">
 									<h3 class="services_item_heading">Кредит</h3>
 									<p class="services_item_info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 								</div>
-								<a href="credit.html" class="anchor-reset">
-									<img src="img/credit.svg" alt="кредит">
+								<a class="services_image_3" href="credit.html" class="anchor-reset">
+									<img src="img/credit.svg" alt="кредит" width="156" height="186">
 								</a>
 							</li>
 						</ul>
@@ -229,25 +245,25 @@
 					<li class="partners_item list-style_reset">
 						<a href="catalog/dji.html" class="anchor-reset partners-anchor">
 							<img class="colorless" src="img/dji.png" width="260" alt="DJI">
-							<img class="in-color" src="img/dji-color.jpg" width="260" alt="DJI">
+							<img class="in-color" src="img/dji-color.jpg" alt="DJI" width="260" height="100">
 						</a>
 					</li>
 					<li class="partners_item list-style_reset">
 						<a href="catalog/sp_gadjets.html" class="anchor-reset partners-anchor">
 							<img src="img/sp-gadjets.png" width="260" alt="Sp Gadjets">
-							<img class="in-color" src="img/sp-gadjets-color.jpg" width="260" alt="Sp Gadjets">
+							<img class="in-color" src="img/sp-gadjets-color.jpg" alt="Sp Gadjets" width="260" height="100">
 						</a>
 					</li>
 					<li class="partners_item list-style_reset">
 						<a href="catalog/go_pro.html" class="anchor-reset partners-anchor">
 							<img src="img/go-pro.png" width="260" alt="Go Pro">
-							<img class="in-color" src="img/go-pro-color.jpg" width="260" alt="Go Pro">
+							<img class="in-color" src="img/go-pro-color.jpg" alt="Go Pro" width="260" height="100">
 						</a>
 					</li>
 					<li class="partners_item list-style_reset">
 						<a href="catalog/vive.html" class="anchor-reset partners-anchor">
 							<img src="img/vive.png" width="260" alt="Vive">
-							<img class="in-color" src="img/vive-color.jpg" width="260" alt="Vive">
+							<img class="in-color" src="img/vive-color.jpg" alt="Vive"width="260" height="100">
 						</a>
 					</li>
 				</ul>
@@ -267,8 +283,8 @@
 				<section class="contacts">
 					<h3 id="contacts">Контакты</h3>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<img src="img/map.jpg" width="560" alt="офис DEVICE по адресу улица Строителей, 15">
-					<a href="write-us.html" class="anchor-reset">НАПИШИТЕ НАМ</a>
+					<img src="img/map.jpg" alt="офис DEVICE по адресу улица Строителей, 15"  width="560" height="222">
+					<a href="write-us.html" class="anchor-reset write-us-button">НАПИШИТЕ НАМ</a>
 				</section>
 			</div>
 		</main>
@@ -276,7 +292,7 @@
 		<footer class="index-footer">
 			<div class="index-footer_wrapper">
 				<div class="footer-left">
-					<img src="img/device-footer.svg" alt="Device-logo_footer">
+					<img src="img/device-footer.svg" alt="Device-logo_footer" width="163" height="36">
 					<p>г. Москва, ул. Строителей, 15</p>
 				</div>
 				<div class="footer-center">
@@ -295,19 +311,19 @@
 						<li class="socials_button list-style_reset">
 							<a href="https://www.facebook.com/device-shop" class="anchor-reset">
 								<span class="visually-hidden">мы на фейсбуке</span>
-								<img src="img/fb.svg" alt="facebook">
+								<img src="img/fb.svg" alt="facebook" width="32" height="32">
 							</a>
 						</li>
 						<li class="socials_button list-style_reset">
 							<a href="https://www.instagram.com/device-shop" class="anchor-reset">
 								<span class="visually-hidden">мы в инстаграмме</span>
-								<img src="img/instagram.svg" alt="instagram">
+								<img src="img/instagram.svg" alt="instagram" width="32" height="32">
 							</a>
 						</li>
 						<li class="socials_button list-style_reset">
 							<a href="https://www.twitter.com/device-shop" class="anchor-reset">
 								<span class="visually-hidden">мы в твиттере</span>
-								<img src="img/twitter.svg" alt="twitter">
+								<img src="img/twitter.svg" alt="twitter" width="32" height="32">
 							</a>
 						</li>
 					</ul>
@@ -330,16 +346,16 @@
 					</div>
 					<p>Тел.: +7 (495) 495-95-95</p>
 					<a href="https://htmlacademy.ru/intensive/htmlcss" class="anchor-reset">
-						<img src="img/logo-html.svg" alt="html academy">
+						<img src="img/logo-html.svg" alt="html academy" width="27" height="35">
 					</a>
 				</div>
 			</div>
 		</footer>
 
-		<div class="pop-up_form">
-				<button class="pop-up_close" type="button">
-					<span class="visually-hidden">кнопка закрытия окна</span>
-				</button>
+		<div class="pop-up_form pop-up_hidden">
+			<button class="pop-up_close" type="button">
+				<span class="visually-hidden">кнопка закрытия окна</span>
+			</button>
 			<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
 				<div class="input-name_wrapper">
 					<label for="write-us">Ваше имя:</label>
@@ -359,11 +375,13 @@
 			</form>
 		</div>
 
-		<div class="pop-up_map">
-			<button type="button" >
+		<div class="pop-up_map pop-up_hidden">
+			<button type="button" class="map-close" >
 				<span class="visually-hidden">кнопка закрытия окна</span>
 			</button>
-			<img src="img/map_pop-up.jpg" width="960" alt="г. Москва, ул. Строителей, 15">
+			<img src="img/map_pop-up.jpg" alt="г. Москва, ул. Строителей, 15" width="994" height="593">
 		</div>
+
+		<script src="js/script.js"></script>
 	</body>
 </html>
