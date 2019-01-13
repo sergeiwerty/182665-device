@@ -243,7 +243,6 @@ body {
 	padding: 0;
 	padding-top: 33px;
 	display: flex;
-	/*position: relative;*/
 }
 
 .navigation_item {
@@ -1362,7 +1361,6 @@ width: 237px;
 	flex-direction: row;
 	justify-content: space-around;
 	width: 440px;
-
 }
 
 .footer-navigation_list li:nth-child(1) {
@@ -1829,7 +1827,7 @@ a[href="sign-out.html"] {
 }
 
 .pagination-list a {
-  font-family: "Gilroy", "Arial Black", sans-serif;
+	font-family: "Gilroy", "Arial Black", sans-serif;
 	font-size: 16px;
 	font-weight: 800;
 	line-height: 24px;
@@ -1893,9 +1891,7 @@ a[href="sign-out.html"] {
 }
 
 .item:hover .cart-button,
-.item:hover .compare-button/*,
-.item:focus .cart-button,
-.item:focus .compare-button */{
+.item:hover .compare-button {
 	display: inline-block;
 	vertical-align: middle;
 }
