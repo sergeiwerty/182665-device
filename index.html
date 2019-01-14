@@ -47,7 +47,7 @@
 			</div>
 			<nav class="main-navigation">
 				<ul class="navigation_list">
-					<li class="navigation_item list-style_reset">
+					<li class="navigation_item ttk list-style_reset">
 						<a class="catalog-open anchor-reset" href="#">Каталог товаров</a>
 						<ul class="catalog_list">
 							<li class="catalog_list_item list-style_reset">
@@ -213,7 +213,7 @@
 									<h3 id="delivery" class="services_item_heading">Доставка</h3>
 									<p class="services_item_info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 								</div>
-								<a class="services_image_1" href="delivery.html" class="anchor-reset">
+								<a class="services_image_1 anchor-reset" href="delivery.html">
 									<img src="img/delivery.svg" alt="доставка" width="136" height="164">
 								</a>
 							</li>
@@ -222,7 +222,7 @@
 									<h3 id="warranty" class="services_item_heading">Гарантия</h3>
 									<p class="services_item_info">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
 								</div>
-								<a class="services_image_2" href="warranty.html" class="anchor-reset">
+								<a class="services_image_2 anchor-reset" href="warranty.html">
 									<img src="img/warranty.svg" alt="гарантия" width="171" height="194">
 								</a>
 							</li>
@@ -231,7 +231,7 @@
 									<h3 class="services_item_heading">Кредит</h3>
 									<p class="services_item_info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 								</div>
-								<a class="services_image_3" href="credit.html" class="anchor-reset">
+								<a class="services_image_3 anchor-reset" href="credit.html">
 									<img src="img/credit.svg" alt="кредит" width="156" height="186">
 								</a>
 							</li>
@@ -263,7 +263,7 @@
 					<li class="partners_item list-style_reset">
 						<a href="catalog/vive.html" class="anchor-reset partners-anchor">
 							<img src="img/vive.png" width="260" alt="Vive">
-							<img class="in-color" src="img/vive-color.jpg" alt="Vive"width="260" height="100">
+							<img class="in-color" src="img/vive-color.jpg" alt="Vive" width="260" height="100">
 						</a>
 					</li>
 				</ul>
@@ -332,7 +332,11 @@
 					<div class="user-interface_list_wrapper">
 						<ul class="user-interface_list_footer">
 							<li class="user-interface_item_footer list-style_reset">
-								<a href="sign-in.html" class="anchor-reset">Войти</a>
+								<a href="sign-in.html" class="anchor-reset">
+									<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#ffc600" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+									</svg>
+									<p>Войти</p>
+								</a>
 							</li>
 						</ul>
 						<ul class="purchase_list_footer">
@@ -345,7 +349,7 @@
 						</ul>
 					</div>
 					<p>Тел.: +7 (495) 495-95-95</p>
-					<a href="https://htmlacademy.ru/intensive/htmlcss" class="anchor-reset">
+					<a href="https://htmlacademy.ru/intensive/htmlcss" class="anchor-reset htmlacademy-site">
 						<img src="img/logo-html.svg" alt="html academy" width="27" height="35">
 					</a>
 				</div>
@@ -369,7 +373,7 @@
 					<label for="text-of-message">Текст письма:</label>
 					<textarea name="input-message" id="text-of-message" rows="5">В свободной форме</textarea>
 				</div>
-				<label class="visually-hidden">Отправить данные формы
+				<label class="index-form_button" aria-label="Отправить данные формы">
 					<input type="submit" name="write-us_submit" value="ОТПРАВИТЬ">
 				</label>
 			</form>

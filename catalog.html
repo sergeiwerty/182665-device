@@ -10,7 +10,7 @@
 	<body>
 		<header class="main-header main-header_catalog">
 			<a href="index.html" class="anchor-reset">
-				<img src="img/device.svg" alt="Device logo" width="163.281" height="34.938">
+				<img src="img/device.svg" alt="Device logo" width="163" height="34">
 			</a>
 			<h1 class="visually-hidden">Каталог гаджетов "Device"</h1>
 			<div class="search_interface-purchase_wrapper">
@@ -19,12 +19,15 @@
 					<input class="search-button" type="submit" name="search-request" value="Найти">
 				</form>
 				<div class="lists-wrapper">
-					<ul class="index-interface_list">
-						<li class="index-interface_item list-style_reset">
-								<a class="interface-anchor anchor-reset" href="sign-in.html">
-									<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
-									<p>Войти</p>
+					<ul class="index-interface_list catalog-interface_list ">
+						<li class="index-interface_item catalog-interface_item list-style_reset">
+								<a class="interface-anchor interface-anchor_catalog anchor-reset" href="sign-in.html">
+									<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" class="user-svg"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+									<span>Валентив Петухов</span>
 								</a>
+							</li>
+							<li class="catalog-interface_item list-style_reset"> 
+								<a href="log-out.html" class="interface-anchor log-out-anchor">Выйти</a>
 							</li>
 					</ul>
 					<ul class="purchase-list">
@@ -49,7 +52,7 @@
 			</div>
 			<nav class="main-navigation">
 				<ul class="navigation_list">
-					<li class="navigation_item list-style_reset" ><a href="#" class="catalog_in-open anchor-reset">Каталог товаров</a>
+					<li class="navigation_item list-style_reset" ><a href="#" class="catalog-open anchor-reset">Каталог товаров</a>
 						<ul class="catalog_list">
 							<li class="catalog_list_item list-style_reset">
 								<a href="virtual.html" class="anchor-reset">Виртуальная реальность</a>
@@ -228,17 +231,11 @@
 								<li class="list-style_reset">
 									<a href="#" class="anchor-reset pagination_anchor pagination_backward">Назад</a>
 								</li>
-								<div class="pagination_pages">
-									<li class="pagination-list_item pagination_item_current list-style_reset anchor-reset">
-										<a class="pagination_anchor">1</a>
-									</li>
-									<li class="pagination-list_item list-style_reset">
+								<li class="list-style_reset pagination_pages">
+										<a class="pagination_anchor pagination_item_current">1</a>
 										<a href="#" class="anchor-reset pagination_anchor">2</a>
-									</li>
-									<li class="pagination-list_item list-style_reset">
 										<a href="#" class="anchor-reset pagination_anchor">3</a>
-									</li>
-								</div>
+								</li>
 								<li class="list-style_reset">
 									<a href="#" class="anchor-reset pagination_anchor pagination_forward">Вперёд</a>
 								</li>
@@ -255,14 +252,18 @@
 					<img src="img/device-footer.svg" alt="Device-logo_footer" width="163" height="36">
 					<p>г. Москва, ул. Строителей, 15</p>
 				</div>
-				<div class="footer-center footer-center_catalog">
-					<ul class="user-interface_list_footer in-profile_interface_list">
-						<li class="user-interface_item_footer in-profile_item list-style_reset">
-							<a href="user-profile.html" class="anchor-reset">Валентин Петухов</a>
+				<div class="footer-center_catalog">
+					<ul class="in-profile_interface_list">
+						<li class="user-interface_catalog_footer in-profile_item list-style_reset">
+							<a href="user-profile.html" class="anchor-reset user-in">
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#ffc600" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+								</svg>
+								<span class="user-name">Валентин Петухов</span>
+						</a>
 						</li>
 					</ul>
 					<ul class="footer-navigation_list">
-						<li class="footer-navigation_item list-style_reset">
+						<li class="footer-navigation_item_catalog list-style_reset">
 							<a class="navigation_item_anchor anchor-reset" href="#delivery">Доставка</a>
 						</li>
 						<li class="footer-navigation_item list-style_reset">
@@ -272,7 +273,7 @@
 							<a class="navigation_item_anchor anchor-reset" href="#contacts">Контакты</a>
 						</li>
 					</ul>
-					<ul class="socials_list">
+					<ul class="socials_list_catalog">
 						<li class="socials_button list-style_reset">
 							<a href="https://www.facebook.com/device-shop" class="anchor-reset">
 								<span class="visually-hidden">мы на фейсбуке</span>
@@ -293,11 +294,11 @@
 						</li>
 					</ul>
 				</div>
-				<div class="footer-right footer-right_catalog">
-					<div class="footer-interface_wrapper ">
-						<ul class="">
-							<li class="user-interface_item_footer list-style_reset">
-								<a href="sign-in.html" class="anchor-reset">Выйти</a>
+				<div class="footer-right_catalog">
+					<div class="footer-interface_wrapper">
+						<ul class="user-interface_catalog_footer_lst">
+							<li class="user-interface_catalog_footer_out list-style_reset">
+								<a href="sign-out.html" class="anchor-reset">Выйти</a>
 							</li>
 						</ul>
 						<ul class="purchase_list_footer">
@@ -309,8 +310,8 @@
 							</li>
 						</ul>
 					</div>
-					<p>Тел.: +7(495)495-95-95</p>
-					<a href="https://htmlacademy.ru/intensive/htmlcss" class="anchor-reset htmlacademy-site">
+					<p>Тел.: +7 (495) 495-95-95</p>
+					<a href="https://htmlacademy.ru/intensive/htmlcss" class="anchor-reset htmlacademy-site_catalog">
 						<img src="img/logo-html.svg" alt="html academy" width="27" height="35">
 					</a>
 				</div>
